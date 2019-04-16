@@ -22,22 +22,33 @@ If you are using Maven
     mvn spring-boot:run
     ```
 3. Open browser and hit the below end point
+
+   
+    Scenario 1:
+    URL : [http://localhost:8080/validateData/csv](http://localhost:8080/validateData/csv)
     
-    URL: [http://localhost:8080/validateData/csv](http://localhost:8080/validateData/csv)
-    Response: 
+    Response : 
+    ```json
     {
     "failedResponse": [],
     "errorMsg": "Files not found in the given location..."
     }
+    ```
+    Scenario 2:
     URL : [http://localhost:8080/validateData/csd](http://localhost:8080/validateData/csd)
+    
     Response :
+    ```json
     {
     "failedResponse": null,
     "errorMsg": "Please provide the accepted file formats :: csv,xml"
     }
+    ```
+    Scenario 3:
+    URL : [http://localhost:8080/validateData/csv](http://localhost:8080/validateData/csv)
     
-    URL:[http://localhost:8080/validateData/csv](http://localhost:8080/validateData/csv)
-    Response:
+    Response :
+    ```json
     {
     "failedResponse": [
     {
@@ -51,4 +62,5 @@ If you are using Maven
     ],
     "errorMsg": null
     }
+    ```
     
