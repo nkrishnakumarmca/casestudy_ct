@@ -2,12 +2,13 @@
   The objective of this application is to read the transaction details from the given input file and validate the transaction as per the  business needs and highlight the failed transactions.
 
 ## Configuration Details
-  Application works on the files given in the specified physical path location in config.properties file
+  Application works on the files given in the specified physical path location in config.properties file.
   It will read the given data in the csv/xml file and validate it and send the failed validation data in response as JSON
+  Make sure to configure the below properties properly
   
-  `accepted.file.formats=csv,xml`
-  `file.path.unprocessed={processed.file.location}`
-  `file.path.processed={unprocessed.file.location}`
+  * accepted.file.formats=csv,xml
+  * file.path.unprocessed={processed.file.location}
+  * file.path.processed={unprocessed.file.location}
 
 ## Steps to run
 
